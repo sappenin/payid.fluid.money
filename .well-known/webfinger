@@ -1,0 +1,10 @@
+{
+  "subject": "payid:pay$fluid.money",
+  "links": [
+    {
+      "rel": "https:\/\/payid.org\/ns\/payid-uri-template\/1.0",
+      "template": "https:\/\/fluid.money\/payid/pay",
+      "type": "application\/jrd+json"
+    }
+  ]
+}
