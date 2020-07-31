@@ -1,142 +1,147 @@
 <!doctype html>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>PayID Simulator</title>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <title>PayID Simulator</title>
 
+        <!-- Web Monetization https://webmonetization.org -->
+        <meta name="monetization" content="$coil.xrptipbot.com/LbppTUw0QpWt7fvEzaDHEw">
 
-<!-- INSIGNIFICANT -->
-<link rel="stylesheet" href="https://use.typekit.net/dlb6yco.css">
-<style type="text/css">
-    @font-face {
-        font-family: 'JetBrains Mono';
-        src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/eot/JetBrainsMono-Regular.eot') format('embedded-opentype'),
-        url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
-        url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff/JetBrainsMono-Regular.woff') format('woff'),
-        url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/ttf/JetBrainsMono-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    body {
-        font: 16px/1.4 Omnes, sans-serif;
-        padding: 2em;
-        max-width: 960px;
-        margin: auto;
-    }
-
-    h1 {
-        font-weight: 600;
-        font-size: 2.5em;
-        margin-bottom: 2rem;
-    }
-
-    a {
-        color: #000;
-        text-decoration: none;
-        margin-left: .15em;
-    }
-
-    h1 a:first-child {
-        color: #0f37ac;
-        margin-left: 0;
-        margin-right: .15em;
-    }
-</style>
-<!-- /INSIGNIFICANT -->
-
-
-<!-- termible.io -->
-<script src="https://termible.io/js/ripple/payid"></script>
-<script type="text/javascript">
-    window.addEventListener('DOMContentLoaded', function () {
-
-        // Instantiate Termible
-        const termible = new Termible({
-            autoStart: true,
-            initialCommand: '',
-            element: document.getElementById('termible'),
-            key: '0962dfe5-203e-4b5e-b9ab-87361af81a5f',
-        })
-
-        // Show the terminal
-        termible.open()
-
-        // Handle example clicks
-        document.body.addEventListener('click', function (e) {
-            if (e.target.classList.contains('runnable')) {
-                const command = e.target.textContent.trim()
-                termible.setCommand(command)
-                setTimeout(() => e.target.classList.add('ran'), 500)
+        <!-- INSIGNIFICANT -->
+        <link rel="stylesheet" href="https://use.typekit.net/dlb6yco.css">
+        <style type="text/css">
+            @font-face {
+                font-family: 'JetBrains Mono';
+                src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/eot/JetBrainsMono-Regular.eot') format('embedded-opentype'),
+                url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+                url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+                url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
             }
-        })
-    })
-</script>
-<!-- /termible.io -->
 
+            body {
+                font: 16px/1.4 Omnes, sans-serif;
+                padding: 2em;
+                max-width: 960px;
+                margin: auto;
+            }
 
-<style type="text/css">
+            h1 {
+                font-weight: 600;
+                font-size: 2.5em;
+                margin-bottom: 2rem;
+            }
 
-    /* Terminal styling */
-    #termible {
-        /* The terminal needs explicit height but the width is responsive. */
-        height: 450px;
-        margin-top: 2em;
-    }
+            a {
+                color: #000;
+                text-decoration: none;
+                margin-left: .15em;
+            }
 
-    /* Runnable examples styling */
-    .runnable {
-        position: relative;
-        background: #f6f6f6;
-        border-radius: 5px;
-        font-weight: 500;
-        padding: .7em;
-        cursor: pointer;
-        transition: .1s all;
-        font-family: "JetBrains Mono", monospace;
-    }
+            h1 a:first-child {
+                color: #0f37ac;
+                margin-left: 0;
+                margin-right: .15em;
+            }
+        </style>
+        <!-- /INSIGNIFICANT -->
 
-    .runnable:before {
-        content: '$ ';
-        opacity: .4;
-        color: #0f37ac
-    }
+        <!-- termible.io -->
+        <script src="https://termible.io/js/ripple/payid"></script>
+        <script type="text/javascript">
+            window.addEventListener('DOMContentLoaded', function () {
 
-    .runnable:after {
-        position: absolute;
-        content: '▶';
-        right: .5em;
-        font-size: 1.2em;
-        margin-top: -.1em;
-        color: #68e068;
-        opacity: .8
-    }
+                // Instantiate Termible
+                const termible = new Termible({
+                    autoStart: true,
+                    initialCommand: '',
+                    element: document.getElementById('termible'),
+                    key: '0962dfe5-203e-4b5e-b9ab-87361af81a5f',
+                })
 
-    .runnable:after {
-        transition: .1s all
-    }
+                // Show the terminal
+                termible.open()
 
-    .runnable:hover {
-        background: #eeeeee
-    }
+                // Handle example clicks
+                document.body.addEventListener('click', function (e) {
+                    if (e.target.classList.contains('runnable')) {
+                        const command = e.target.textContent.trim()
+                        termible.setCommand(command)
+                        setTimeout(() => e.target.classList.add('ran'), 500)
+                    }
+                })
+            })
+        </script>
+        <!-- /termible.io -->
 
-    .runnable:hover:after {
-        opacity: 1
-    }
+        <style type="text/css">
 
-    .runnable.ran:after {
-        content: '✔'
-    }
-</style>
+            /* Terminal styling */
+            #termible {
+                /* The terminal needs explicit height but the width is responsive. */
+                height: 450px;
+                margin-top: 2em;
+            }
 
+            /* Runnable examples styling */
+            .runnable {
+                position: relative;
+                background: #f6f6f6;
+                border-radius: 5px;
+                font-weight: 500;
+                padding: .7em;
+                cursor: pointer;
+                transition: .1s all;
+                font-family: "JetBrains Mono", monospace;
+            }
 
-<h1><a href="https://payid.org/" target="_blank">PayID</a> ♥️ Developers</h1>
+            .runnable:before {
+                content: '$ ';
+                opacity: .4;
+                color: #0f37ac
+            }
 
-<p style="font-weight: bold;">Get XRPL Testnet Address</p>
-<pre class="runnable">https --print=b GET xpring.money/sappenin PayID-Version:1.0 Accept:application/xrpl-testnet+json</pre>
+            .runnable:after {
+                position: absolute;
+                content: '▶';
+                right: .5em;
+                font-size: 1.2em;
+                margin-top: -.1em;
+                color: #68e068;
+                opacity: .8
+            }
 
-<p style="font-weight: bold;">Get All Addresses</p>
-<pre class="runnable">https --print=b GET xpring.money/sappenin PayID-Version:1.0 Accept:application/payid+json</pre>
+            .runnable:after {
+                transition: .1s all
+            }
 
-<p style="font-weight: bold;">Get Mainnet Verified Address</p>
-<pre class="runnable">https --print=b GET payid.fluid.money/pay</pre>
+            .runnable:hover {
+                background: #eeeeee
+            }
 
-<div id="termible"></div>
+            .runnable:hover:after {
+                opacity: 1
+            }
+
+            .runnable.ran:after {
+                content: '✔'
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1><a href="https://payid.org/" target="_blank">PayID</a> ♥️ Developers</h1>
+
+        <p style="font-weight: bold;">Get XRPL Testnet Address</p>
+        <pre class="runnable">https --print=b GET xpring.money/sappenin PayID-Version:1.0 Accept:application/xrpl-testnet+json</pre>
+
+        <p style="font-weight: bold;">Get All Addresses</p>
+        <pre class="runnable">https --print=b GET xpring.money/sappenin PayID-Version:1.0 Accept:application/payid+json</pre>
+
+        <p style="font-weight: bold;">Get Mainnet Verified Address</p>
+        <pre class="runnable">https --print=b GET payid.fluid.money/pay</pre>
+
+        <div id="termible"></div>
+    </body>
+
+</html>
