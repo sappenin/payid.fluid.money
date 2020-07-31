@@ -1,4 +1,5 @@
 {
+  "payId": "pay$fluid.money",
   "addresses": [
     {
       "paymentNetwork": "XRPL",
@@ -12,5 +13,43 @@
       }
     }
   ],
-  "payId": "pay$fluid.money"
+  "verifiableAddresses": [
+      {
+        "payId" : "pay$payid.fluid.money",
+        "addresses" : [ ],
+        "verifiedAddresses" : [ {
+          "signatures" : [ {
+            "protected" : {
+              "jwk" : {
+                "kty" : "EC",
+                "use" : "sig",
+                "crv" : "secp256k1",
+                "kid" : "880d20cd-f85a-4877-ab9a-ea57dede9ba3",
+                "x" : "vdpgX2IZN-QTezTI9GMwu_yivGmkacs4DIffp243LbM",
+                "y" : "QRk62p7Gm0Sq13T2C04TyUTY8XOcxHVk9HLh-UrOtxg",
+                "alg" : "ES256K"
+              },
+              "name" : "identityKey",
+              "alg" : "ES256K",
+              "typ" : "JOSE+JSON",
+              "crit" : [ "b64" ],
+              "b64" : false
+            },
+            "signature" : "hGTEfefdYU1i0Ng7Vlp4fDiB0cK_Qhehp0jgT506NiXSiavv0_bkuyq8Mcg0E1z9FoAikmB6l19H2GzMa0hGBQ"
+          } ],
+          "payload" : {
+            "payId" : "pay$payid.fluid.money",
+            "payIdAddress" : {
+              "paymentNetwork" : "XRPL",
+              "environment" : "TESTNET",
+              "addressDetailsType" : "CryptoAddressDetails",
+              "addressDetails" : {
+                "address" : "rw2ciyaNshpHe7bCHo4bRWq6pqqynnWKQg",
+                "tag" : "722714325"
+              }
+            }
+          }
+        } ]
+      }
+  ]
 }

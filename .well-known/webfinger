@@ -1,9 +1,9 @@
 {
-  "subject": "payid:pay$fluid.money",
+  "subject": "payid:pay$payid.fluid.money",
   "links": [
     {
       "rel": "https:\/\/payid.org\/ns\/payid-uri-template\/1.0",
-      "template": "https:\/\/fluid.money\/payid/pay",
+      "template": "https:\/\/payid.fluid.money\/pay",
       "type": "application\/jrd+json"
     }
   ]
