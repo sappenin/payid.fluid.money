@@ -130,9 +130,13 @@
 
 <h1><a href="https://payid.org/" target="_blank">PayID</a> ♥️ Developers</h1>
 
-<pre class="runnable">http httpbin.org/get</pre>
-<pre class="runnable">http --help</pre>
-<pre class="runnable">curl httpbin.org/get</pre>
-<pre class="runnable">curl --help</pre>
+<p style="font-width: bold;">Get XRPL Testnet Address</p>
+<pre class="runnable">https GET xpring.money/sappenin PayID-Version:1.0 Accept:application/xrpl-testnet+json</pre>
+
+<p style="font-width: bold;">Get XRPL Mainnet Address</p>
+<pre class="runnable">https GET xpring.money/sappenin PayID-Version:1.0 Accept:application/xrpl-mainnet+json</pre>
+
+<p style="font-width: bold;">Get All Addresses</p>
+<pre class="runnable">https GET xpring.money/sappenin PayID-Version:1.0 Accept:application/payid+json</pre>
 
 <div id="termible"></div>
