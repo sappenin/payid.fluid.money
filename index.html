@@ -1,6 +1,8 @@
 <!doctype html>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -14,50 +16,135 @@
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
-      }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
     </style>
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">Cover</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="#">Home</a>
-<!--        <a class="nav-link" href="#">Features</a>-->
-<!--        <a class="nav-link" href="#">Contact</a>-->
-      </nav>
-    </div>
-  </header>
+</head>
+<body class="text-center">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand">Cover</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#">Home</a>
+                <!--        <a class="nav-link" href="#">Features</a>-->
+                <!--        <a class="nav-link" href="#">Contact</a>-->
+            </nav>
+        </div>
+    </header>
 
-  <main role="main" class="inner cover">
-    <h1 class="cover-heading">Fluid Money</h1>
-    <p class="lead">Building the financial system of tomorrow -- today!</p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-    </p>
-  </main>
+    <main role="main" class="inner cover">
+        <pre class="runnable">http httpbin.org/get</pre>
+        <pre class="runnable">http --help</pre>
+        <pre class="runnable">curl httpbin.org/get</pre>
+        <pre class="runnable">curl --help</pre>
 
-  <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p>Made with ❤️  in the U.S.A.</p>
-    </div>
-  </footer>
+        <div id="termible"></div>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Made with ❤️ in the U.S.A.</p>
+        </div>
+    </footer>
 </div>
+
+<!-- termible.io -->
+<script src="https://termible.io/js/ripple/payid"></script>
+<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function () {
+
+        // Instantiate Termible
+        const termible = new Termible({
+            autoStart: true,
+            initialCommand: '',
+            element: document.getElementById('termible'),
+            key: '0962dfe5-203e-4b5e-b9ab-87361af81a5f',
+        })
+
+        // Show the terminal
+        termible.open()
+
+        // Handle example clicks
+        document.body.addEventListener('click', function (e) {
+            if (e.target.classList.contains('runnable')) {
+                const command = e.target.textContent.trim()
+                termible.setCommand(command)
+                setTimeout(() => e.target.classList.add('ran'), 500)
+            }
+        })
+    })
+</script>
+<!-- /termible.io -->
+
+
+<style type="text/css">
+
+    /* Terminal styling */
+    #termible {
+        /* The terminal needs explicit height but the width is responsive. */
+        height: 500px;
+        margin-top: 2em;
+    }
+
+    /* Runnable examples styling */
+    .runnable {
+        position: relative;
+        background: #f6f6f6;
+        border-radius: 5px;
+        font-weight: 500;
+        padding: .7em;
+        cursor: pointer;
+        transition: .1s all;
+        font-family: "JetBrains Mono", monospace;
+    }
+
+    .runnable:before {
+        content: '$ ';
+        opacity: .4;
+        color: #0f37ac
+    }
+
+    .runnable:after {
+        position: absolute;
+        content: '▶';
+        right: .5em;
+        font-size: 1.2em;
+        margin-top: -.1em;
+        color: #68e068;
+        opacity: .8
+    }
+
+    .runnable:after {
+        transition: .1s all
+    }
+
+    .runnable:hover {
+        background: #eeeeee
+    }
+
+    .runnable:hover:after {
+        opacity: 1
+    }
+
+    .runnable.ran:after {
+        content: '✔'
+    }
+</style>
+
 </body>
 </html>
