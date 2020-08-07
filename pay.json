@@ -2,27 +2,21 @@
   "payId": "pay$payid.fluid.money",
   "addresses": [
     {
-      "payId": "pay$payid.fluid.money",
-      "payIdAddress": {
-        "paymentNetwork": "XRPL",
-        "environment": "TESTNET",
-        "addressDetailsType": "CryptoAddressDetails",
-        "addressDetails": {
-          "address": "rw2ciyaNshpHe7bCHo4bRWq6pqqynnWKQg",
-          "tag": "722714325"
-        }
+      "paymentNetwork": "XRPL",
+      "environment": "TESTNET",
+      "addressDetailsType": "CryptoAddressDetails",
+      "addressDetails": {
+        "address": "rw2ciyaNshpHe7bCHo4bRWq6pqqynnWKQg",
+        "tag": "722714325"
       }
     },
     {
-      "payId": "pay$payid.fluid.money",
-      "payIdAddress": {
-        "paymentNetwork": "XRPL",
-        "environment": "MAINNET",
-        "addressDetailsType": "CryptoAddressDetails",
-        "addressDetails": {
-          "address": "rw2ciyaNshpHe7bCHo4bRWq6pqqynnWKQg",
-          "tag": "722714325"
-        }
+      "paymentNetwork": "XRPL",
+      "environment": "MAINNET",
+      "addressDetailsType": "CryptoAddressDetails",
+      "addressDetails": {
+        "address": "rw2ciyaNshpHe7bCHo4bRWq6pqqynnWKQg",
+        "tag": "722714325"
       }
     }
   ],
@@ -47,4 +41,3 @@
     }
   ]
 }
-
