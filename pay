@@ -28,36 +28,22 @@
   ],
   "verifiedAddresses": [
     {
-      "payId": "pay$payid.fluid.money",
-      "addresses": [
-      ],
-      "verifiedAddresses": [
+      "signatures": [
         {
-          "signatures": [
-            {
-              "protected": "eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJraWQiOiJlMTViNmM5Zi0yZWEwLTQ1ZTctYWYxNi01ODk3M2E1MDM4ZmEiLCJuYW1lIjoiaWRlbnRpdHlLZXkiLCJ0eXAiOiJKT1NFK0pTT04iLCJhbGciOiJFUzI1NksiLCJqd2siOnsia3R5IjoiRUMiLCJ1c2UiOiJzaWciLCJjcnYiOiJzZWNwMjU2azEiLCJraWQiOiJlMTViNmM5Zi0yZWEwLTQ1ZTctYWYxNi01ODk3M2E1MDM4ZmEiLCJ4IjoiXzE5dFJ2dDQ4UWltbFZaS25DUzE5TFJBeUNPWmNndVAxXzhaQkJKQWMwQSIsInkiOiJJNW9wemlQQ3cxblB3SnQxRXhDbEhfa1o2YUlrQlk0bUtfTnBEeEV5MHEwIiwiYWxnIjoiRVMyNTZLIn19",
-              "signature": "p-Xg_8KJIgiqAUA99Jd_VM8PVwpbNhj3vCC5DX8Xr2gatl91pCndxZMKBdsOhL95OuHHUomcj69zl2B9_vdf6A"
-            }
-          ],
-          "payload": "{\"payId\":\"pay$payid.fluid.money\",\"payIdAddress\":{\"paymentNetwork\":\"XRPL\",\"environment\":\"TESTNET\",\"addressDetailsType\":\"CryptoAddressDetails\",\"addressDetails\":{\"address\":\"rw2ciyaNshpHe7bCHo4bRWq6pqqynnWKQg\",\"tag\":\"722714325\"}}}"
+          "protected": "eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJraWQiOiJiZmJlMjIwZi01YTM0LTRiMjMtOTM3Yy1lZWExMmFmOTM4NTgiLCJuYW1lIjoiaWRlbnRpdHlLZXkiLCJ0eXAiOiJKT1NFK0pTT04iLCJhbGciOiJFUzI1NksiLCJqd2siOnsia3R5IjoiRUMiLCJ1c2UiOiJzaWciLCJjcnYiOiJzZWNwMjU2azEiLCJraWQiOiJiZmJlMjIwZi01YTM0LTRiMjMtOTM3Yy1lZWExMmFmOTM4NTgiLCJ4IjoidUxtR1NfTVRBTThWTkhWcVVQVTg2SHlQNTdNTkd5MV8ybDJGbTMzcTd4ayIsInkiOiJyV3hjMkNjY1ZxSjN3Mnd3Z1BaSjBpc3o3V1VzendMSC1scGQ3a1BZVjNjIiwiYWxnIjoiRVMyNTZLIn19",
+          "signature": "C0z25ahYd3plodWtTf0PwvoRyXs4e_ZE7wyvBreSsElSlfN50D6vb6pIeDdzUsfgp6UKRkF7sOMiE-vr6NqOSA"
         }
-      ]
+      ],
+      "payload": "{\"payId\":\"pay$payid.fluid.money\",\"payIdAddress\":{\"paymentNetwork\":\"XRPL\",\"environment\":\"MAINNET\",\"addressDetailsType\":\"CryptoAddressDetails\",\"addressDetails\":{\"address\":\"rw2ciyaNshpHe7bCHo4bRWq6pqqynnWKQg\",\"tag\":\"722714325\"}}}"
     },
     {
-      "payId": "pay$payid.fluid.money",
-      "addresses": [
-      ],
-      "verifiedAddresses": [
+      "signatures": [
         {
-          "signatures": [
-            {
-              "protected": "eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJraWQiOiJlMTViNmM5Zi0yZWEwLTQ1ZTctYWYxNi01ODk3M2E1MDM4ZmEiLCJuYW1lIjoiaWRlbnRpdHlLZXkiLCJ0eXAiOiJKT1NFK0pTT04iLCJhbGciOiJFUzI1NksiLCJqd2siOnsia3R5IjoiRUMiLCJ1c2UiOiJzaWciLCJjcnYiOiJzZWNwMjU2azEiLCJraWQiOiJlMTViNmM5Zi0yZWEwLTQ1ZTctYWYxNi01ODk3M2E1MDM4ZmEiLCJ4IjoiXzE5dFJ2dDQ4UWltbFZaS25DUzE5TFJBeUNPWmNndVAxXzhaQkJKQWMwQSIsInkiOiJJNW9wemlQQ3cxblB3SnQxRXhDbEhfa1o2YUlrQlk0bUtfTnBEeEV5MHEwIiwiYWxnIjoiRVMyNTZLIn19",
-              "signature": "tcK8zdtIcDHVyz1GKj2SRWTD862KcDsjsNM1d9SFDPp4wuDoe0dBja80KOzpMijXcxdKjoA7aqiYQqbm1hMCIw"
-            }
-          ],
-          "payload": "{\"payId\":\"pay$payid.fluid.money\",\"payIdAddress\":{\"paymentNetwork\":\"XRPL\",\"environment\":\"TESTNET\",\"addressDetailsType\":\"CryptoAddressDetails\",\"addressDetails\":{\"address\":\"rw2ciyaNshpHe7bCHo4bRWq6pqqynnWKQg\",\"tag\":\"722714325\"}}}"
+          "protected": "eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJraWQiOiJiZmJlMjIwZi01YTM0LTRiMjMtOTM3Yy1lZWExMmFmOTM4NTgiLCJuYW1lIjoiaWRlbnRpdHlLZXkiLCJ0eXAiOiJKT1NFK0pTT04iLCJhbGciOiJFUzI1NksiLCJqd2siOnsia3R5IjoiRUMiLCJ1c2UiOiJzaWciLCJjcnYiOiJzZWNwMjU2azEiLCJraWQiOiJiZmJlMjIwZi01YTM0LTRiMjMtOTM3Yy1lZWExMmFmOTM4NTgiLCJ4IjoidUxtR1NfTVRBTThWTkhWcVVQVTg2SHlQNTdNTkd5MV8ybDJGbTMzcTd4ayIsInkiOiJyV3hjMkNjY1ZxSjN3Mnd3Z1BaSjBpc3o3V1VzendMSC1scGQ3a1BZVjNjIiwiYWxnIjoiRVMyNTZLIn19",
+          "signature": "y-ZvMl9L4xmD331n1wvtGnO69EkXxGXItLDxncNW97Asc3ycW8md0BxlZiEm6UisBhdyTf_ZF7ZYlDs8lq1WPA"
         }
-      ]
+      ],
+      "payload": "{\"payId\":\"pay$payid.fluid.money\",\"payIdAddress\":{\"paymentNetwork\":\"XRPL\",\"environment\":\"TESTNET\",\"addressDetailsType\":\"CryptoAddressDetails\",\"addressDetails\":{\"address\":\"rw2ciyaNshpHe7bCHo4bRWq6pqqynnWKQg\",\"tag\":\"722714325\"}}}"
     }
   ]
 }
